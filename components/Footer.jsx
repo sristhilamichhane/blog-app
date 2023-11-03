@@ -1,7 +1,7 @@
 "use client"
 
-import useMenuActive from '@/hooks/useMenuActive';
-import { Links } from '@/constants/links';
+import useMenuActive from '../hooks/useMenuActive';
+import { Links } from '../constants/links';
 import LinkItem from './LinkItem';
 
 const Footer = () => {

@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
-import { Links } from "@/constants/links";
+import { Links } from "../constants/links";
 import { IoMdPulse } from "react-icons/io";
 import ThemeToggle from "./ThemeToggle";
-import useMenuActive from "@/hooks/useMenuActive";
+import useMenuActive from "../hooks/useMenuActive";
 import LinkItem from "./LinkItem";
 
 const Navbar = () => {
@@ -24,13 +24,13 @@ const Navbar = () => {
           {Links.map((link, index) => {
             const isActive = useMenuActive(link.route);
             return (
-                <LinkItem
+              <LinkItem
                 key={index}
                 route={link.route}
                 label={link.label}
                 isActive={isActive}
-                />
-            )
+              />
+            );
           })}
         </div>
         <div className="flex-1 justify-end flex gap-3">

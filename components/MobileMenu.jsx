@@ -1,4 +1,4 @@
-import { Links } from "@/constants/links";
+import { Links } from "../constants/links";
 import Link from "next/link";
 import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
